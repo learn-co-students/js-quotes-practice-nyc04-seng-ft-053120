@@ -46,20 +46,20 @@ function gentlyPlaceQuoteOnDOM(quoteObject) {
 
   const lineBreak = document.createElement("br");
 
-  const likesBtn = document.createElement("button");
-  likesBtn.className = "btn-success";
+  const likeBtn = document.createElement("button");
+  likeBtn.className = "btn-success";
   const numLikesSpan = document.createElement("span");
 
   (likes === undefined) ? (numLikesSpan.innerText = "0") : (numLikesSpan.innerText = likes.length)
 
-  likesBtn.innerText = "Likes: ";
-  likesBtn.append(numLikesSpan);
+  likeBtn.innerText = "Likes: ";
+  likeBtn.append(numLikesSpan);
 
   const deleteBtn = document.createElement("button");
   deleteBtn.className = "btn-danger";
   deleteBtn.innerText = "Delete";
 
-  blockquoteEl.append(quotePara, quoteFooter, lineBreak, likesBtn, deleteBtn);
+  blockquoteEl.append(quotePara, quoteFooter, lineBreak, likeBtn, deleteBtn);
 
   quoteListUl.append(quoteLi);
 
@@ -73,6 +73,13 @@ function gentlyPlaceQuoteOnDOM(quoteObject) {
         quoteLi.remove();
       });
   })
+
+  // Clicking the like button will create a like for this particular quote in the API and update the number of likes displayed on the page without having to refresh.
+  
+  
+
+
+
 }
 
 function submitNewQuoteAndAddToDOM(evt) {
@@ -102,4 +109,4 @@ function postQuote(newQuoteObject) {
     });
 }
 
-getQuotes();
+getQuotes();v
