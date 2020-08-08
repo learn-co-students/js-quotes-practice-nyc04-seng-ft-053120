@@ -1,13 +1,8 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "Expect nothing. Live frugally on surprise.",
-      "author": "Alice Walker"
-    },
-    {
       "id": 2,
-      "quote": "Y’all is the best, most inclusive, second-person, plural pronoun in the English-speaking world.",
+      "quote": "Y'all is the best, most inclusive, second-person, plural pronoun in the English-speaking world.",
       "author": "Hannah Gadsby"
     },
     {
@@ -48,9 +43,119 @@
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
+      "quoteId": 9,
+      "createdAt": 1596911615,
+      "id": 2
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1596911616,
+      "id": 3
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1596911616,
+      "id": 4
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1596911618,
+      "id": 5
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1596911622,
+      "id": 6
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1596911623,
+      "id": 7
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1596911624,
+      "id": 8
+    },
+    {
+      "quoteId": 9,
+      "createdAt": 1596918665,
+      "id": 10
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1596918673,
+      "id": 11
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1596918675,
+      "id": 12
+    },
+    {
+      "quoteId": 6,
+      "createdAt": 1596918676,
+      "id": 13
+    },
+    {
+      "quoteId": 5,
+      "createdAt": 1596918677,
+      "id": 14
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1596918678,
+      "id": 15
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1596918680,
+      "id": 16
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926219,
+      "id": 19
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926220,
+      "id": 20
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926221,
+      "id": 21
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926221,
+      "id": 22
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926221,
+      "id": 23
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926221,
+      "id": 24
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1596926223,
+      "id": 25
+    },
+    {
+      "quoteId": 2,
+      "createdAt": 1596926431,
+      "id": 36
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1596926432,
+      "id": 37
     }
   ]
 }
