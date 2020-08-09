@@ -107,56 +107,57 @@ function gentlyPlaceQuoteOnDOM(quoteObject) {
   
   // Clicking the edit button will trigger a form to be added to the quoteLi, which is prepopulated with the quote object info (quote, author)
   editBtn.addEventListener("click", (evt) => {
-    const editForm = document.createElement("form");
-    editForm.innerHTML = 
-    `
-      <form id="editForm">
-        <label for="quoteEditInput">Quote:</label><br>
-
-        <textarea id="quoteEditInput" name="quoteEditInput">${quote}</textarea><br>
-
-        <label for="authorEditInput">Author:</label><br>
-        
-        <input type="text" id="authorEditInput" name="authorEditInput" value="${author}"><br><br>
-
-        <input type="submit" value="Submit">
-      </form> 
-    `
-    quoteLi.append(editForm);
-    
-    // On submit, make a patch request for the particular quote, and update the DOM
-    editForm.addEventListener("submit", (evt) => {
-      evt.preventDefault();
-
-      // Grab the form and the user's inputs
-      const quoteEditInput = document.querySelector("#quoteEditInput").value;
-      const authorEditInput = document.querySelector("#authorEditInput").value;
-
-      const editedQuoteObject = {
-        "quote": quoteEditInput,
-        "author": authorEditInput
-      }
-      fetch('http://localhost:3000/quotes/' + id, {
-        method: 'PATCH',
-        headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-        body: JSON.stringify(editedQuoteObject)
-      }).then(response => response.json())
-        .then(editedQuoteObject => {
-          quoteLi.innerHTML = `
-          <li class='quote-card'>
-            <blockquote class="blockquote">
-              <p class="mb-0">${quoteEditInput}</p>
-              <footer class="blockquote-footer">${authorEditInput}</footer>
-              <br>
-              <button class='btn-success'>Likes: <span>${likes.length}</span></button>
-              <button class='btn-danger'>Delete</button>
-              <button class="btn-warning">Edit</button>
-            </blockquote>
-          </li>`;
-        });
-    })
-
+    editQuote(evt,quoteObject);
   })
+}
+
+function editQuote(evt, quoteObject) {
+  const editQuoteLi = evt.target.parentElement.parentElement;
+  const editForm = document.createElement("form");
+  editForm.innerHTML = 
+  `
+    <form id="editForm">
+      <label for="quoteEditInput">Quote:</label><br>
+
+      <textarea id="quoteEditInput" name="quoteEditInput">${editQuoteLi.querySelector(".mb-0").innerText}</textarea><br>
+
+      <label for="authorEditInput">Author:</label><br>
+      
+      <input type="text" id="authorEditInput" name="authorEditInput" value="${editQuoteLi.querySelector(".blockquote-footer").innerText}"><br><br>
+
+      <input type="submit" value="Submit">
+    </form> 
+  `
+  
+  editQuoteLi.append(editForm);
+
+  // On submit, make a patch request for the particular quote, and update the DOM
+  editForm.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+
+    // Grab the form and the user's inputs
+    const quoteEditInput = document.querySelector("#quoteEditInput").value;
+    const authorEditInput = document.querySelector("#authorEditInput").value;
+
+    const editedQuoteObject = {
+      "quote": quoteEditInput,
+      "author": authorEditInput
+    }
+
+    fetch('http://localhost:3000/quotes/' + quoteObject.id, {
+      method: 'PATCH',
+      headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
+      body: JSON.stringify(editedQuoteObject)
+    }).then(response => response.json())
+      .then(editedQuoteObject => {
+    
+        editQuoteLi.querySelector(".mb-0").innerText = quoteEditInput;
+        editQuoteLi.querySelector(".blockquote-footer").innerText = authorEditInput;
+      });
+      editForm.remove()
+  })
+   
+  
 }
 
 function submitNewQuoteAndAddToDOM(evt) {

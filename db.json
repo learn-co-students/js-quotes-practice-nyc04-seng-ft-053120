@@ -3,7 +3,7 @@
     {
       "id": 2,
       "quote": "Y'all is the best, most inclusive, second-person, plural pronoun in the English-speaking world.",
-      "author": "Hannah Gadsby"
+      "author": "Hannah Pllanaaaaa"
     },
     {
       "id": 3,
@@ -26,11 +26,6 @@
       "author": "Audre Lorde"
     },
     {
-      "id": 7,
-      "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
-      "author": "Confucius"
-    },
-    {
       "id": 8,
       "quote": "Don't count the days, make the days count.",
       "author": "Muhammad Ali"
@@ -38,7 +33,7 @@
     {
       "id": 9,
       "quote": "Not everything that is faced can be changed, but nothing can be changed until it is faced.",
-      "author": "James Baldwin"
+      "author": "James Baldwin Jr"
     }
   ],
   "likes": [
@@ -86,11 +81,6 @@
       "quoteId": 8,
       "createdAt": 1596918673,
       "id": 11
-    },
-    {
-      "quoteId": 7,
-      "createdAt": 1596918675,
-      "id": 12
     },
     {
       "quoteId": 6,
@@ -156,6 +146,21 @@
       "quoteId": 3,
       "createdAt": 1596926432,
       "id": 37
+    },
+    {
+      "quoteId": 5,
+      "createdAt": 1596930774,
+      "id": 38
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1596930776,
+      "id": 39
+    },
+    {
+      "quoteId": 6,
+      "createdAt": 1596930776,
+      "id": 40
     }
   ]
 }
