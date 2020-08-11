@@ -58,8 +58,8 @@ let renderQuote = (quoteObj) => {
 //Clicking Button will create a like for specific quote
     likeButton.addEventListener("click", (evt) => {
         
-       let innerInt = parseInt(buttonSpan.innerText)
-       innerInt += 1
+    //    let innerInt = parseInt(buttonSpan.innerText)
+    //    innerInt += 1
 
         fetch("http://localhost:3000/likes", {
             method: "POST",
@@ -74,8 +74,16 @@ let renderQuote = (quoteObj) => {
         )
         .then(res => res.json())
         .then(likeData => {
-            buttonSpan.innerText = innerInt
+           likeData
         })
+
+        fetch(`http://localhost:3000/likes?quoteId=${quoteObj.id}`)
+           .then(res => res.json())
+            .then(quoteLikes => {
+                buttonSpan.innerText = quoteLikes.length
+            console.log(quoteLikes)})
+          
+   
         //I didnt use the returned data in this fetch
     })
 
@@ -109,7 +117,4 @@ newForm.addEventListener("submit", (evt) => {
             return quoteContainer
         }
     )
-
-
-
 })
