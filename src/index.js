@@ -66,9 +66,9 @@ function toggleEditForm(e) {
   const author = parentQuoteLi.querySelector('footer').textContent;
 
   const currentForm = parentQuoteLi.querySelector('form');
-  const hasForm = currentForm === null;
+  const hasNoEditForm = currentForm === null;
   
-  if (hasForm) {
+  if (hasNoEditForm) {
     const editForm = createEditForm(quote, author);
     parentQuoteLi.append(editForm);
   } else {
