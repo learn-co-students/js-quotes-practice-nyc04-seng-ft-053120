@@ -17,12 +17,12 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
 
 ## Build a simple, Event-driven, JavaScript DOM-modifying application
 
-* Populate page with quotes with a `GET` request to
+<!-- * Populate page with quotes with a `GET` request to
   `http://localhost:3000/quotes?_embed=likes`. The query string in this URL tells 
   `json-server` to include the likes for a quote in the JSON of the response. You
-  should not use this query string when creating or deleting a quote.
+  should not use this query string when creating or deleting a quote. -->
 
-* Each quote should have the following structure:
+<!-- * Each quote should have the following structure: -->
   ```html
     <li class='quote-card'>
       <blockquote class="blockquote">
@@ -35,13 +35,13 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
     </li>
   ```
 
-* Submitting the form creates a new quote and adds it to the list of quotes
-  without having to refresh the page. Pessimistic rendering is reccommended.
+<!-- * Submitting the form creates a new quote and adds it to the list of quotes
+  without having to refresh the page. Pessimistic rendering is reccommended. -->
 
-* Clicking the delete button should delete the respective quote from the
-  API and remove it from the page without having to refresh.
+<!-- * Clicking the delete button should delete the respective quote from the
+  API and remove it from the page without having to refresh. -->
 
-* Clicking the like button will create a like for this particular quote in the
+<!-- * Clicking the like button will create a like for this particular quote in the
   API and update the number of likes displayed on the page without having to
   refresh.
   * Use a `POST` request to `http://localhost:3000/likes`
@@ -51,12 +51,12 @@ If you already have it installed, run the server by: `$ json-server --watch db.j
   * Bonus (not required): add a `createdAt` key to your object to track when
     the like was created. Use [UNIX time][] (the number of seconds since
     January 1, 1970). The  [documentation][] for the JS `Date` class may be
-    helpful here!
+    helpful here! -->
 
 ## Extend Your Learning
 
 * Add an edit button to each quote-card that will allow the editing of a quote. _(Hint: there is no 'correct' way to do this. You can try creating a hidden form that will only show up when hitting the edit button.)_
-* Currently, the number of likes of each post does not persist on the frontend after we refresh, as we set the beginning value to 0. Include an additional fetch to always have an updated number of likes for each post. You will send a GET request to `http://localhost:3000/likes?quoteId=` and interpolate the id of a given post.
+<!-- * Currently, the number of likes of each post does not persist on the frontend after we refresh, as we set the beginning value to 0. Include an additional fetch to always have an updated number of likes for each post. You will send a GET request to `http://localhost:3000/likes?quoteId=` and interpolate the id of a given post. -->
 * Add a sort button that can be toggled on or off. When off the list of quotes will appear sorted by the ID. When the sort is active, it will display the quotes by author's name, alphabetically.
   * One way of doing this is to sort the quotes in JS after you've retrieved them from the API. Try this way first.
   * Another way of doing this is to make a fetch to `http://localhost:3000/quotes?_sort=author`
