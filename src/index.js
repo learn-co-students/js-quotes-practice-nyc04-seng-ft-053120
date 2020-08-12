@@ -1,4 +1,4 @@
-const quotesArray = [];
+const quotesArray = []
 const quotesUl = document.querySelector("#quote-list")
 const newquoteForm = document.querySelector("#new-quote-form")
 // console.log(newquoteForm)
@@ -33,7 +33,7 @@ let convertToHTML = (singleQuote) => {
     const deleteButton = document.createElement("button")
         deleteButton.className = "btn-danger"
         deleteButton.innerText = "Delete"
-
+    // APPEND ALL HTML TAGS TOGETHER & TO UL
     blockQuote.append(quoteP, quoteFooter, quoteBr, likesButton, deleteButton)
     quoteLi.append(blockQuote)
     quotesUl.append(quoteLi)
@@ -51,14 +51,14 @@ let convertToHTML = (singleQuote) => {
 
     //  EVENT LISTENER TO LIKE BUTTON
     likesButton.addEventListener("click", (evt) => {
-            let likesPlus = singleQuote.likes
+            let likesPlus = singleQuote.likes     // GET LIKES WE ALREADY HAVE 
         fetch(`http://localhost:3000/likes/`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({
-                quoteId: singleQuote.id,
+            body: JSON.stringify({                // ADD LIKES OBJECT PROPERTIES
+                quoteId: singleQuote.id,   
                 createdAt: Date.now()
             })
             })
@@ -72,6 +72,7 @@ let convertToHTML = (singleQuote) => {
         })
     }; // END OF CONVERT INTO HTML
 
+// NEW QUOTE FORM EVENT LISTENER 
 newquoteForm.addEventListener("submit", (evt) => {
     evt.preventDefault()
 
@@ -85,7 +86,7 @@ newquoteForm.addEventListener("submit", (evt) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(userInput)
+            body: JSON.stringify(userInput)       
             })
             .then(res => res.json())
             .then((newQuote) => {
