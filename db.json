@@ -1,36 +1,6 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "Expect nothing. Live frugally on surprise.",
-      "author": "Alice Walker"
-    },
-    {
-      "id": 2,
-      "quote": "Y’all is the best, most inclusive, second-person, plural pronoun in the English-speaking world.",
-      "author": "Hannah Gadsby"
-    },
-    {
-      "id": 3,
-      "quote": "today a man on the street pointed to me & said ‘what the hell is that!?’ i wanted to turn around, tell him that i got this dress on sale & i got this body for free but you have been making me pay for both ever since.",
-      "author": "Alok Vaid Menon"
-    },
-    {
-      "id": 4,
-      "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' You must do the thing you think you cannot do.",
-      "author": "Eleanor Roosevelt"
-    },
-    {
-      "id": 5,
-      "quote": "We had better not enjoy the moment, but create the moment.",
-      "author": "Ai Weiwei"
-    },
-    {
-      "id": 6,
-      "quote": "If I didn't define myself for myself, I would be crunched into other people's fantasies for me and eaten alive.",
-      "author": "Audre Lorde"
-    },
-    {
       "id": 7,
       "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
       "author": "Confucius"
@@ -54,18 +24,428 @@
       "id": 11,
       "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
       "author": "Ann Richards"
+    },
+    {
+      "quote": "Let me explain ",
+      "author": "Don Francisco ",
+      "id": 12
+    },
+    {
+      "quote": "dsasdfasd",
+      "author": "Potato Head",
+      "id": 13
+    },
+    {
+      "quote": "DSFSF",
+      "author": "C-ca$h",
+      "id": 14
+    },
+    {
+      "quote": "2 Chain's actual rapper name is ",
+      "author": "Barbs ",
+      "id": 15
     }
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
-    },
-    {
       "quoteId": 10,
       "id": 2,
       "createdAt": 1558524358
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190201937,
+      "id": 3
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190206159,
+      "id": 4
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190206881,
+      "id": 5
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190207307,
+      "id": 6
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190207494,
+      "id": 7
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190207682,
+      "id": 8
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190207870,
+      "id": 9
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190208050,
+      "id": 10
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190208236,
+      "id": 11
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190208417,
+      "id": 12
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190208591,
+      "id": 13
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190208747,
+      "id": 14
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190208897,
+      "id": 15
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209062,
+      "id": 16
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209211,
+      "id": 17
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209369,
+      "id": 18
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209512,
+      "id": 19
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209662,
+      "id": 20
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209819,
+      "id": 21
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190209994,
+      "id": 22
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190210157,
+      "id": 23
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190210331,
+      "id": 24
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190210517,
+      "id": 25
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190210690,
+      "id": 26
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190210840,
+      "id": 27
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190211004,
+      "id": 28
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190212084,
+      "id": 29
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190222442,
+      "id": 30
+    },
+    {
+      "quoteId": 7,
+      "createdAt": 1597190256943,
+      "id": 31
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190390892,
+      "id": 32
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190391890,
+      "id": 33
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190392310,
+      "id": 34
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190392639,
+      "id": 35
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190392940,
+      "id": 36
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190393209,
+      "id": 37
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190393479,
+      "id": 38
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190393727,
+      "id": 39
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190393929,
+      "id": 40
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190394124,
+      "id": 41
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190394296,
+      "id": 42
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190394477,
+      "id": 43
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190394649,
+      "id": 44
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190394799,
+      "id": 45
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190394973,
+      "id": 46
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190395121,
+      "id": 47
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190395287,
+      "id": 48
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190395466,
+      "id": 49
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190395616,
+      "id": 50
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190395774,
+      "id": 51
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190395939,
+      "id": 52
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190396104,
+      "id": 53
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190396284,
+      "id": 54
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190396442,
+      "id": 55
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190396621,
+      "id": 56
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190396796,
+      "id": 57
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190396959,
+      "id": 58
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190397110,
+      "id": 59
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190397289,
+      "id": 60
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190397447,
+      "id": 61
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190397619,
+      "id": 62
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190397784,
+      "id": 63
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190397965,
+      "id": 64
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190398115,
+      "id": 65
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190398287,
+      "id": 66
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190398451,
+      "id": 67
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190398624,
+      "id": 68
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190398811,
+      "id": 69
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190398995,
+      "id": 70
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190399149,
+      "id": 71
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190399321,
+      "id": 72
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190399486,
+      "id": 73
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190399651,
+      "id": 74
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190399816,
+      "id": 75
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190399981,
+      "id": 76
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190400138,
+      "id": 77
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190400319,
+      "id": 78
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190400484,
+      "id": 79
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190400641,
+      "id": 80
+    },
+    {
+      "quoteId": 8,
+      "createdAt": 1597190400821,
+      "id": 81
     }
   ]
 }
