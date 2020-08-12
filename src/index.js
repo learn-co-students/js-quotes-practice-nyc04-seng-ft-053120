@@ -64,7 +64,9 @@ let convertToHTML = (singleQuote) => {
             })
             .then(resp => resp.json())
             .then((newLike) => {
+                // PUSH THE NEW LIKE TO OUR LIKES ARRAY AKA LIKESPLUS
                 likesPlus.push(newLike)
+                // ADD THE UPDATED ARRAY AKA LIKESPLUS TO OUR LIKES SPAN
                 likesSpan.innerText = likesPlus.length
             })
         })
